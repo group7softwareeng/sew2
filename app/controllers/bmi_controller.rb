@@ -14,6 +14,16 @@ class BmiController < ApplicationController
     x = @height * @height
     @bmi = @weight[0] / x
     puts @bmi
+
+    new_height = params['mybmi']['height']
+    new_weight = params['mybmi']['weight']
+    if new_height != nil
+      if new_weight != nil
+        @bmi = new_height * new_height / new_weight
+        puts @bmi
+      end
+    end
+
   end
 
   def getBMi
