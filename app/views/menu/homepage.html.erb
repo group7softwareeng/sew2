@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Exercise Coach</title>
+  <meta charset="utf-8"/>
+
+  <%= javascript_pack_tag 'EC_Vue' %>
+  <%= stylesheet_pack_tag 'EC_Vue' %>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Noto+Sans:wght@400;700&family=Noto+Serif&family=Open+Sans&family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<div id=vuemain>
+  <header>
+    <div v-if="maintitle" class="Title">Exercise Coach
+      <i v-on:click="settingsAppear" class="material-icons" id="settings">settings</i>
+    </div>
+    <div v-if="settings" class="Title">Settings
+      <i v-on:click="homepgAppear" class="material-icons" id="home">home</i>
+    </div>
+  </header>
+  <main>
+
+    <div class="settingsmenu" v-if="settings">
+      <div class="pure-menu custom-restricted-width">
+        <span class="pure-menu-heading" style="color:white;">My Account</span>
+        <ul class="pure-menu-list">
+          <li class="pure-menu-item">
+            <a href="#" class="pure-menu-link" style="color:white;">Edit Profile</a>
+          </li>
+          <li class="pure-menu-item">
+            <a href="#" class="pure-menu-link" style="color:white;">My Goals</a>
+          </li>
+          <li class="pure-menu-item">
+            <a href="#" class="pure-menu-link" style="color:white;">Change Password</a>
+          </li>
+          <li class="pure-menu-item">
+            <a href="#" class="pure-menu-link" style="color:white;">Delete Account</a>
+          </li>
+          <li class="pure-menu-item">
+            <a href="#" class="pure-menu-link" style="color:white;">Log Out</a>
+          </li>
+          <li class="pure-menu-heading" style="color:white;">Settings</li>
+          <li class="pure-menu-item">
+            <a href="#" class="pure-menu-link" style="color:white;">Reminders</a>
+          </li>
+          <li class="pure-menu-item">
+            <a href="#" class="pure-menu-link" style="color:white;">Push</a>
+          </li>
+          <li class="pure-menu-item">
+            <a href="#" class="pure-menu-link" style="color:white;">Notifications</a>
+          </li>
+          <li class="pure-menu-item">
+            <a href="#" class="pure-menu-link" style="color:white;">Manage Devices</a>
+          </li>
+          <li class="pure-menu-item">
+            <a href="#" class="pure-menu-link" style="color:white;">Privacy Centre</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div v-if="exerciseplan">
+      <div class="exerciseplan">
+        Exercise Plan Selection
+      </div>
+      <div class="pure-g exerciseplanselect">
+        <div class="pure-u-1-3 plans">
+          <p>PLAN 1</p>
+          <p>this exercise is pushups and stuff</p>
+          <label for="aligned-cb" class="pure-checkbox done">
+            <input type="checkbox" id="aligned-cb plan1"/> Finished</label>
+        </div>
+        <div class="pure-u-1-3 plans">
+          <p>PLAN 2</p>
+          <p>this exercise is pullups and stuff</p>
+          <label for="aligned-cb" class="pure-checkbox done">
+            <input type="checkbox" id="aligned-cb plan2"/> Finished</label>
+        </div>
+        <div class="pure-u-1-3 plans">
+          <p>PLAN 3</p>
+          <p>this exercise is situps and stuff</p>
+          <label for="aligned-cb" class="pure-checkbox done">
+            <input type="checkbox" id="aligned-cb plan3"/> Finished</label>
+        </div>
+        <div class="pure-u-1-3 plans">
+          <p>PLAN 4</p>
+          <p>this exercise is benches and stuff</p>
+          <label for="aligned-cb" class="pure-checkbox done">
+            <input type="checkbox" id="aligned-cb plan4"/> Finished</label>
+        </div>
+        <div class="pure-u-1-3 plans">
+          <p>PLAN 4</p>
+          <p>this exercise is burpees and stuff</p>
+          <label for="aligned-cb" class="pure-checkbox done">
+            <input type="checkbox" id="aligned-cb plan5"/> Finished</label>
+        </div>
+        <div class="pure-u-1-3 plans">
+          <p>PLAN 4</p>
+          <p>this exercise is burpees and stuff</p>
+          <label for="aligned-cb" class="pure-checkbox done">
+            <input type="checkbox" id="aligned-cb plan6"/> Finished</label>
+        </div>
+      </div>
+    </div>
+
+    <div v-if="bmi" class="BMI">BMI (Body Mass Index) is a widely used measure to find out whether you’re a healthy
+      weight for your height.
+    </div>
+    <div v-if="bmi">
+      <form class="pure-form pure-form-stacked bmiinput">
+        <fieldset>
+          <legend>BMI calculator</legend>
+          <label for="stacked-state">Weight</label>
+          <select id="stacked-state">
+            <option>51 kg</option>
+            <option>52 kg</option>
+            <option>53 kg</option>
+            <option>54 kg</option>
+          </select>
+          <label for="stacked-state">Height</label>
+          <select id="stacked-state">
+            <option>169 cm</option>
+            <option>170 cm</option>
+            <option>172 cm</option>
+            <option>173 cm</option>
+          </select>
+        </fieldset>
+      </form>
+
+      <div class="calculatedBmi">Calculated BMI: 17.9</div>
+
+    </div>
+
+    <div v-if="homepg">
+
+      <div class="stepstitle">Steps:</div>
+      <div class="steps">
+        7500/10000
+
+        <div class="w3-light-grey">
+          <div class="w3-blue" style="height:50px;width:75%"></div>
+        </div>
+
+      </div>
+
+      <div class="planprogress">Exercise Plan Progress:
+        <div class="w3-light-grey">
+          <div class="w3-blue" style="height:36px;width:75%"></div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <div v-if="navigation" class="pure-g">
+      <div class="pure-u-1-3" v-on:click="homepgAppear"><p>Home</p></div>
+      <div class="pure-u-1-3" v-on:click="bmiAppear"><p>BMI</p></div>
+      <div class="pure-u-1-3" v-on:click="exercisePlanAppear"><p>Exercise</p></div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

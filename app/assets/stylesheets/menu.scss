@@ -1,0 +1,215 @@
+// Place all the styles related to the Menu controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.Title {
+  padding: 50px;
+  border: 2px #6495ed;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 100px;
+  width: 100%;
+  color: white;
+}
+
+body {
+  background-color: #a8a8a8;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+
+}
+
+.custom-restricted-width {
+  /* To limit the menu width to the content of the menu: */
+  display: inline-block;
+  /* Or set the width explicitly: */
+  /* width: 10em; */
+  font-size: 70px;
+}
+
+#settings {
+  top: 80px;
+  right: 60px;
+  position: absolute;
+  font-size: 90px;
+}
+
+.pure-menu-headin {
+  color: white;
+}
+
+#home {
+  top: 80px;
+  right: 60px;
+  position: absolute;
+  font-size: 90px;
+}
+
+.exerciseplan {
+  margin: auto;
+  width: 50%;
+  font-size: 80px;
+  text-align: center;
+  border: 7px solid #6495ed;
+  margin-top: 10%;
+
+}
+
+.exerciseplanselect {
+  width: 90%;
+  margin: auto;
+  font-size: 40px;
+  text-align: center;
+  overflow: auto;
+  height: 5%;
+
+}
+
+.plans {
+  padding: 40px;
+  font-size: 35px;
+  width: 70px;
+}
+
+
+.BMI {
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  width: 65%;
+  margin: auto;
+  margin-top: 30%;
+  padding: 20px;
+  border: 7px solid #6495ed;
+
+}
+
+.bmiinput {
+  font-size: 40px;
+  text-align: left;
+  margin: auto;
+  width: 50%;
+  padding-top: 30px;
+}
+
+.calculatedBmi {
+  border: 0px solid #6495ed;
+  width: 50%;
+  margin: auto;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+select {
+  overflow: auto;
+}
+
+label {
+  color: white;
+}
+
+header {
+  background-color: #6495ed;
+  width: 100%;
+  top: 0px;
+  /*position: fixed;*/
+}
+
+.stepstitle {
+  margin: auto;
+  width: 50%;
+  border: 0px solid green;
+  padding: 10px;
+  margin-top: 30vh;
+  text-align: center;
+  font-size: 100px;
+  color: white;
+}
+
+.steps {
+  padding: 10px;
+  margin-top: 30vh;
+  margin: auto;
+  color: white;
+  font-size: 150px;
+  width: 80%;
+  text-align: center;
+}
+
+.planprogress {
+  margin: auto;
+  width: 70%;
+  margin-top: 5vh;
+  text-align: center;
+  font-size: 5.5em;
+  color: white;
+}
+
+.progress {
+  padding: 10px;
+  color: white;
+  font-size: 1.0em;
+}
+
+footer {
+  color: white;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  bottom: 0px;
+  font-size: 50px;
+}
+
+/*
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+*/
+
+
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+.done {
+  font-size: 28px;
+  background: #6495ed;
+  padding: 20px;
+}
