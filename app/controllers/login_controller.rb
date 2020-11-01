@@ -7,7 +7,7 @@ class LoginController < ApplicationController
     pass = User.where(:username => username).pluck(:password)
     if pass[0] == password
       user = User.where(:username => username)
-      bmi = BmiController.new(user)
+      # bmi = BmiController.test(user)
       redirect_to "/menu/homepage.html"
     else
       redirect_back(fallback_location: root_path)

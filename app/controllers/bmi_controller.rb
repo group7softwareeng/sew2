@@ -1,19 +1,13 @@
+require_relative 'menu_controller.rb'
 class BmiController < ApplicationController
 
-  attr_accessor :height , :weight
+  attr_accessor :height , :weight , :bmi
   #height is in m and weight is in kg
-  def initialize(user)
-    @height = user.pluck(:height)
-    @height = @height[0] / 100
-    @weight = user.pluck(:weight)
-    puts @height, @weight[0]
-    calculateBMI
-  end
 
-  def calculateBMI
-    x = @height * @height
-    @bmi = @weight[0] / x
-    puts @bmi
+  def calculateBMI(h,w)
+    x = h[0] * h[0]
+    @bmi = w[0] / x
+    MenuController.updateBMI(@bmi)
   end
 
   def getBMi

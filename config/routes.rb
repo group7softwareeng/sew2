@@ -6,17 +6,15 @@ Rails.application.routes.draw do
   get 'login/logout'
 
   get 'menu/homepage'
-  get 'menu/gotoHome'
-  get 'menu/gotoSettings'
-  get 'menu/gotoExercise'
-  get 'menu/gotoBmi'
+  post 'menu/calculateBMI'
+  post 'menu/updateBMI'
 
   post 'user/updateDetails'
   get 'user/sendUserDetails'
   get 'user/sendExerciseData'
   post 'user/newUser'
 
-  get 'bmi/calculateBmi'
+  post 'bmi/calculateBMI'
   get 'bmi/getBmi'
 
   post 'exercisedata/updateData'

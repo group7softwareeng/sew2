@@ -11,12 +11,19 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="923f3486-a38b-43e4-9f00-ba7d0b4df533" name="Default Changelist" comment="" />
+    <list default="true" id="923f3486-a38b-43e4-9f00-ba7d0b4df533" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/myapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myapp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/bmi_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/bmi_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/menu/homepage.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/menu/homepage.html.erb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,9 +42,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Rails.Development: myapp">
+  <component name="RunManager" selected="JavaScript Debug.homepage">
+    <configuration name="homepage" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://127.0.0.1:3000/menu/homepage">
+      <method v="2" />
+    </configuration>
     <configuration name="Development: myapp" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="myapp" />
       <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
@@ -48,7 +65,11 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="127.0.0.1" />
@@ -68,7 +89,11 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="127.0.0.1" />
@@ -87,7 +112,11 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="spec" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":rspec " />
@@ -109,7 +138,11 @@
       </envs>
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="test" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":test_unit " />
@@ -119,6 +152,11 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.homepage" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
@@ -131,6 +169,8 @@
       <updated>1602594906178</updated>
       <workItem from="1602594910960" duration="1748000" />
       <workItem from="1602596829975" duration="19000" />
+      <workItem from="1603800855568" duration="3038000" />
+      <workItem from="1603804113040" duration="3085000" />
     </task>
     <servers />
   </component>
@@ -148,7 +188,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -161,6 +201,11 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/sew2" />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
     <state x="471" y="284" key="#Notifications" timestamp="1602595023923">
       <screen x="0" y="0" width="1440" height="920" />
@@ -170,5 +215,29 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="313" y="119" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.920@0.0.1440.920" timestamp="1602594998216" />
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1603801937863">
+      <screen x="0" y="23" width="1440" height="842" />
+    </state>
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.23.1440.842@0.23.1440.842" timestamp="1603801937863" />
+    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1603801937860">
+      <screen x="0" y="23" width="1440" height="842" />
+    </state>
+    <state width="1398" height="214" key="GridCell.Tab.0.center/0.23.1440.842@0.23.1440.842" timestamp="1603801937860" />
+    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1603801937859">
+      <screen x="0" y="23" width="1440" height="842" />
+    </state>
+    <state width="1398" height="214" key="GridCell.Tab.0.left/0.23.1440.842@0.23.1440.842" timestamp="1603801937859" />
+    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1603801937861">
+      <screen x="0" y="23" width="1440" height="842" />
+    </state>
+    <state width="1398" height="214" key="GridCell.Tab.0.right/0.23.1440.842@0.23.1440.842" timestamp="1603801937861" />
+    <state x="229" y="83" key="SettingsEditor" timestamp="1603804125343">
+      <screen x="0" y="23" width="1440" height="842" />
+    </state>
+    <state x="229" y="83" key="SettingsEditor/0.23.1440.842@0.23.1440.842" timestamp="1603804125343" />
+    <state x="320" y="180" key="Vcs.Push.Dialog.v2" timestamp="1603804562295">
+      <screen x="0" y="23" width="1440" height="842" />
+    </state>
+    <state x="320" y="180" key="Vcs.Push.Dialog.v2/0.23.1440.842@0.23.1440.842" timestamp="1603804562295" />
   </component>
 </project>

@@ -5,10 +5,8 @@ class Bmi < ApplicationRecord
   attr_accessor :bmi
 
   #height is in m and weight is in kg
-  def initialize
-  end
 
-  def calculateBMI
+  def calculateBMI(h,w)
   end
 
   def getBMi

@@ -111,29 +111,24 @@
 
     <div v-if="bmi" class="BMI">BMI (Body Mass Index) is a widely used measure to find out whether you’re a healthy
       weight for your height.
+
+
     </div>
     <div v-if="bmi">
-      <form class="pure-form pure-form-stacked bmiinput">
-        <fieldset>
-          <legend>BMI calculator</legend>
-          <label for="stacked-state">Weight</label>
-          <select id="stacked-state">
-            <option>51 kg</option>
-            <option>52 kg</option>
-            <option>53 kg</option>
-            <option>54 kg</option>
-          </select>
-          <label for="stacked-state">Height</label>
-          <select id="stacked-state">
-            <option>169 cm</option>
-            <option>170 cm</option>
-            <option>172 cm</option>
-            <option>173 cm</option>
-          </select>
-        </fieldset>
-      </form>
 
-      <div class="calculatedBmi">Calculated BMI: 17.9</div>
+      <%= form_tag :action => 'calculateBMI' do %>
+        <label for="weight">Weight</label>
+        <%= text_field :myform, :weight, :cols => '20', :rows => '5' %>
+        <br>
+        <label for="height">Height</label>
+        <%= text_field :myform, :height, :cols => '20', :rows => '5' %>
+        <br>
+        <%= button_to "Calculate", action: "calculateBMI" %>
+      <% end %>
+
+      <div class="calculatedBmi">Calculated BMI:</div>
+      <div style="font-size:32px;" ><%= @bmi.to_i %></div>
+
 
     </div>
 
